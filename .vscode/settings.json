@@ -1,0 +1,64 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Spotified",
+            "database": "spotified",
+            "username": "root"
+        },
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Spotified-PG",
+            "username": "postgres",
+            "database": "spotified"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "ep-holy-cloud-adh1wi0f-pooler.c-2.us-east-1.aws.neon.tech",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "NEON-Spotified",
+            "database": "neondb",
+            "username": "neondb_owner"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "NEON-SPOTF",
+            "connectString": "postgresql://neondb_owner:npg_MjydW1It5QvY@ep-holy-cloud-adh1wi0f-pooler.c-2.us-east-1.aws.neon.tech/spotified?sslmode=require"
+        },
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "Local-PG-nest",
+            "connectString": "postgres://postgres:postgres@localhost:5432/nest_api_tutorial?schema=public"
+        }
+    ]
+}
