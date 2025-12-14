@@ -8,8 +8,8 @@ import { AuthController } from './auth/auth.controller';
 import { AuthService } from './auth/auth.service';
 
 @Module({
-  imports: [AuthModule, UserModule, BookmarkModule],
-  controllers: [AppController, AuthController],
-  providers: [AppService, AuthService],
+    imports: [AuthModule, UserModule, BookmarkModule],
+    controllers: [AppController, AuthController],
+    providers: [AppService, AuthService],
 })
 export class AppModule {}
